@@ -1,0 +1,9 @@
+**/__pycache__
+
+# .csv and .zip data files
+data/**/*.csv
+data/**/*.zip
+
+# .csv and .zip predictions files
+predictions/**/*.csv
+predictions/**/*.zip

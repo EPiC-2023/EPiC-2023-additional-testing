@@ -1,0 +1,42 @@
+# data download settings
+
+[data.download_settings]
+download_dir = "data"
+skip_download = ["competition.competition_data", "post_competition.original_train_noise_test", "post_competition.noise_data", "post_competition.flat_data"] # put unwanted downloads here
+
+[data.competition.competition_data]
+url = "https://drive.google.com/drive/folders/1cZNgZ1Hq_19TbyH1EWbS2pRZElNIG3NG"
+
+[data.competition.test_annot]
+url = "https://drive.google.com/file/d/1GN8nBRWX4lgdtQOzUeoH_qko1C8YC2aZ"
+
+[data.post_competition.original_train_noise_test]
+url = "https://drive.google.com/drive/folders/13wxo3tk10INzdyRrrVUpEPFW0-rtswTR"
+
+[data.post_competition.noise_data]
+url = "https://drive.google.com/drive/folders/1Y5R0u67EnoRBCdFWtnt9a-V5CBzpg0VQ"
+
+[data.post_competition.flat_data]
+url = ""
+
+
+# predictions download settings
+
+[predictions.download_settings]
+download_dir = "predictions"
+skip_download = ["post_competition.baselines"] # put unwanted downloads here
+
+[predictions.competition.baselines]
+url = "https://drive.google.com/file/d/1EfIW3GgcECfIvSnW3woBQtIfxH_LWBVg"
+
+[predictions.competition.submissions]
+url = "https://drive.google.com/file/d/1MK-X-rNkVI0mNGBvAYtwCZQaM6NEngAn"
+
+[predictions.post_competition.baselines]
+url = ""
+
+[predictions.post_competition.rerun_top]
+url = "https://drive.google.com/file/d/1psr4qrwz-2wjhswHLgThAqdQy_MhBaK4"
+
+[predictions.post_competition.best_of_top]
+url = "https://drive.google.com/file/d/1psr4qrwz-2wjhswHLgThAqdQy_MhBaK4"
