@@ -1,6 +1,6 @@
 from benedict import benedict
 from pathlib import Path
-from .downloaders import DataDownloader, PredictionsDownloader
+from .downloaders import Downloader
 
 
 BASE_DIR = Path(__file__).parent.parent
@@ -12,13 +12,13 @@ if __name__ == "__main__":
     # get config for data download 
     data_setup_config = config["data"]
     # setup data downloader
-    data_downloader = DataDownloader(data_setup_config)
+    data_downloader = Downloader(data_setup_config)
     # download data
-    data_downloader.download(extract_archives=True, clean_tmp=False, rm_tmp=False)
-    exit()
+    data_downloader.download(extract_archives=True, clean_tmp=True)
+    # exit()
     # get config for predictions download 
     predictions_setup_config = config["predictions"]
     # setup predictions downloader
-    predictions_downloader = PredictionsDownloader(predictions_setup_config)
+    predictions_downloader = Downloader(predictions_setup_config)
     # download data
-    predictions_downloader.download()
+    predictions_downloader.download(extract_archives=True, clean_tmp=True)

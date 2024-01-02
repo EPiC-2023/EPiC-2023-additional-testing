@@ -2,22 +2,19 @@
 
 [data.download_settings]
 download_dir = "data"
-skip_download = ["competition.competition_data", "post_competition.original_train_noise_test", "post_competition.noise_data", "post_competition.flat_data"] # put unwanted downloads here
+skip_download = ["competition.competition_data", "competition.test_annot", "post_competition.original_train_noise_test", "post_competition.noise_data"] # put unwanted downloads here
 
 [data.competition.competition_data]
 url = "https://drive.google.com/drive/folders/1cZNgZ1Hq_19TbyH1EWbS2pRZElNIG3NG"
 
 [data.competition.test_annot]
-url = "https://drive.google.com/file/d/1GN8nBRWX4lgdtQOzUeoH_qko1C8YC2aZ"
+url = "https://drive.google.com/file/d/1dfb5wDx-AUzIJHRiyv7PxqDVkCONME4b"
 
 [data.post_competition.original_train_noise_test]
-url = "https://drive.google.com/drive/folders/13wxo3tk10INzdyRrrVUpEPFW0-rtswTR"
+url = "https://drive.google.com/drive/folders/1GAnGZZU5VCMmKxurdvk1RcarUVVz9AJh"
 
 [data.post_competition.noise_data]
 url = "https://drive.google.com/drive/folders/1Y5R0u67EnoRBCdFWtnt9a-V5CBzpg0VQ"
-
-[data.post_competition.flat_data]
-url = ""
 
 
 # predictions download settings
@@ -39,4 +36,4 @@ url = ""
 url = "https://drive.google.com/file/d/1psr4qrwz-2wjhswHLgThAqdQy_MhBaK4"
 
 [predictions.post_competition.best_of_top]
-url = "https://drive.google.com/file/d/1psr4qrwz-2wjhswHLgThAqdQy_MhBaK4"
+url = "https://drive.google.com/file/d/1yKrvvnxVPwk-VvO7_is-F1WeWeLt9Bcl"

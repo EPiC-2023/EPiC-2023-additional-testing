@@ -1,2 +1,1 @@
-from .DataDownloader import DataDownloader
-from .PredictionsDownloader import PredictionsDownloader
+from .Downloader import Downloader
