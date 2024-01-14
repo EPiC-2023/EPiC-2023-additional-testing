@@ -1,3 +1,4 @@
+.vscode
 **/__pycache__
 
 # .csv and .zip data files
@@ -7,6 +8,10 @@ data/**/*.zip
 # .csv and .zip predictions files
 predictions/**/*.csv
 predictions/**/*.zip
+
+#
+scores/**/*.json
+scores/**/*.zip
 
 # other .csv files
 **/*.csv

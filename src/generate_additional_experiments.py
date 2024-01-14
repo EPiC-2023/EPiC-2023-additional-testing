@@ -10,7 +10,7 @@ Flat data experiments were not used, so feel free to comment-out code for them.
 """
 
 file_path = Path(__file__)
-root_path = file_path.parent.parent.parent
+root_path = file_path.parent.parent
 cut_noise_to_3_digits = False
 seed = 42
 rng = np.random.default_rng(seed=seed)

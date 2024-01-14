@@ -21,19 +21,19 @@ url = "https://drive.google.com/drive/folders/1Y5R0u67EnoRBCdFWtnt9a-V5CBzpg0VQ"
 
 [predictions.download_settings]
 download_dir = "predictions"
-skip_download = ["post_competition.baselines"] # put unwanted downloads here
+skip_download = ["post_competition_baselines"] # put unwanted downloads here
 
-[predictions.competition.baselines]
-url = "https://drive.google.com/file/d/1EfIW3GgcECfIvSnW3woBQtIfxH_LWBVg"
+[predictions.competition_baselines]
+url = "https://drive.google.com/file/d/11sg07PEAyBqJPotFB4rGzq6usE9QOUg4"
 
-[predictions.competition.submissions]
+[predictions.competition_submissions]
 url = "https://drive.google.com/file/d/1MK-X-rNkVI0mNGBvAYtwCZQaM6NEngAn"
 
-[predictions.post_competition.baselines]
+[predictions.post_competition_baselines]
 url = ""
 
-[predictions.post_competition.rerun_top]
+[predictions.rerun_top_submissions]
 url = "https://drive.google.com/file/d/1psr4qrwz-2wjhswHLgThAqdQy_MhBaK4"
 
-[predictions.post_competition.best_of_top]
+[predictions.best_of_top_submissions]
 url = "https://drive.google.com/file/d/1yKrvvnxVPwk-VvO7_is-F1WeWeLt9Bcl"

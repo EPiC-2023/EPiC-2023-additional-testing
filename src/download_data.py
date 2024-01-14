@@ -13,6 +13,8 @@ if __name__ == "__main__":
     data_setup_config = config["data"]
     # setup data downloader
     data_downloader = Downloader(data_setup_config)
+    # print message
+    print("Downloading data")
     # download data
     data_downloader.download(extract_archives=True, clean_tmp=True)
     # exit()
@@ -20,5 +22,7 @@ if __name__ == "__main__":
     predictions_setup_config = config["predictions"]
     # setup predictions downloader
     predictions_downloader = Downloader(predictions_setup_config)
+    # print message
+    print("Downloading predictions")
     # download data
     predictions_downloader.download(extract_archives=True, clean_tmp=True)
