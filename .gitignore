@@ -7,3 +7,6 @@ data/**/*.zip
 # .csv and .zip predictions files
 predictions/**/*.csv
 predictions/**/*.zip
+
+# other .csv files
+**/*.csv
