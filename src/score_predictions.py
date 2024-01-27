@@ -15,7 +15,7 @@ import ast
 """
 An alternative code for scoring.
 The main difference to the original code is that this one does not contain safeguards against cheating.
-It is also simpler to use and modify than original code.
+It is also simpler to use and modify than the original code.
 Computation logic is the same as in original scoring code, so RMSE values remain the same.
 """
 

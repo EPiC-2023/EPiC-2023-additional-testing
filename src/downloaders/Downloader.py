@@ -15,9 +15,6 @@ class Downloader:
         self.data_download_dir, self.tmp_download_dir, self.data_skip_download = self._parse_config()
         self.download_urls_dict = self._prepare_download_paths()
         self.download_list = list()
-
-    # def _parse_config(self) -> tuple[Path]:
-    #     raise Exception("You should implement this method")
     
     def _parse_config(self) -> tuple[Path]:
         data_download_dir = Path(self.config["download_settings", "download_dir"])

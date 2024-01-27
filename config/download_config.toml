@@ -24,16 +24,32 @@ download_dir = "predictions"
 skip_download = ["post_competition_baselines"] # put unwanted downloads here
 
 [predictions.competition_baselines]
-url = "https://drive.google.com/file/d/11sg07PEAyBqJPotFB4rGzq6usE9QOUg4"
+url = "https://drive.google.com/file/d/1R9XZXa5FEcEKXxjdb2NHBRC21A4hGgMd"
 
 [predictions.competition_submissions]
 url = "https://drive.google.com/file/d/1MK-X-rNkVI0mNGBvAYtwCZQaM6NEngAn"
 
-[predictions.post_competition_baselines]
-url = ""
-
 [predictions.rerun_top_submissions]
-url = "https://drive.google.com/file/d/1psr4qrwz-2wjhswHLgThAqdQy_MhBaK4"
+url = "https://drive.google.com/file/d/1c_7Ap7pl_WcOP1qnVhp7pWvDKhlmB8-W"
 
 [predictions.best_of_top_submissions]
-url = "https://drive.google.com/file/d/1yKrvvnxVPwk-VvO7_is-F1WeWeLt9Bcl"
+url = "https://drive.google.com/file/d/16aW6kMsLtOh1QcWxY279zAmVRbZgqIWb"
+
+
+# scores download settings
+
+[scores.download_settings]
+download_dir = "scores"
+skip_download = [] # put unwanted downloads here
+
+[scores.best_of_top_submissions-finite]
+url = "https://drive.google.com/file/d/1YwpPbs5kFSZpq70lOzs3NwVm628RPO-k"
+
+[scores.competition_baselines-finite]
+url = "https://drive.google.com/file/d/1M37bpn4ZBx7ObbozybOeRS0_zQe6OPwI"
+
+[scores.competition_submissions-finite]
+url = "https://drive.google.com/file/d/1u7mrlVbd-pb8FToglI85oJ6mVNKz3eY_"
+
+[scores.rerun_top_submissions-finite]
+url = "https://drive.google.com/file/d/10_IRyJ6YmXh7UlYdL8OSIlbbWKginu9n"
