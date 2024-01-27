@@ -21,7 +21,7 @@ url = "https://drive.google.com/drive/folders/1Y5R0u67EnoRBCdFWtnt9a-V5CBzpg0VQ"
 
 [predictions.download_settings]
 download_dir = "predictions"
-skip_download = ["post_competition_baselines"] # put unwanted downloads here
+skip_download = [] # put unwanted downloads here
 
 [predictions.competition_baselines]
 url = "https://drive.google.com/file/d/1R9XZXa5FEcEKXxjdb2NHBRC21A4hGgMd"
