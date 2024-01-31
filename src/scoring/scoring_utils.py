@@ -1,7 +1,6 @@
 import numpy as np
 from benedict import benedict
 from sklearn.metrics import mean_squared_error
-from benedict import benedict
 
 
 def residuals_std(y_true, y_pred):

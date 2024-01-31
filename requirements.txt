@@ -1,0 +1,8 @@
+gdown==5.0.1
+python-benedict==0.32.0
+numpy==1.25.2
+pandas==2.0.3
+scikit-learn==1.2.2
+tqdm==4.66.1
+notebook==7.0.7
+ipywidgets==8.0.4

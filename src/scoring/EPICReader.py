@@ -8,8 +8,6 @@ import pandas as pd
 class EPICReader:
     def __init__(self, test_dir) -> None:
         self.root_dir_path = Path(__file__).parent.parent.parent
-        # self.submissions_dir = Path(submissions_dir)
-        # self.scenario = None
         self.test_dir = Path(test_dir)
         self.test_annotations = benedict(keypath_separator=">")
         self.test_paths = benedict(keypath_separator=">")
@@ -31,12 +29,10 @@ class EPICReader:
         # load ids maps
         self.OLD_NEW_IDS, self.NEW_OLD_IDS = self.load_ids_maps(self.ids_map_path) 
         # make path to read test data
-        # scenario_test_dir = self.root_dir_path / f"scenario_{self.scenario}"
         # iterate test data path and save test annotations and file path (for later scoring) 
         for file_path in self.test_dir.glob(pattern=f"**/test/annotations/*.csv"):
             # subvid_str = file_path.stem
             self.test_annotations[str(file_path.relative_to(self.test_dir))] = self.read_annotations_file(file_path)
-            # self.test_paths[subvid_str] = file_path.relative_to(self.root_dir_path)
 
     @staticmethod
     def load_ids_maps(path):
