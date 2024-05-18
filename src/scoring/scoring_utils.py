@@ -12,7 +12,7 @@ def rmse(y_true, y_pred):
 
 
 def concordance_correlation_coefficient(y_true, y_pred, force_finite=False):
-    """Concordance correlation coefficient.
+    """Concordance correlation coefficient, from https://github.com/stylianos-kampakis/supervisedPCA-Python
     The concordance correlation coefficient is a measure of inter-rater agreement.
     It measures the deviation of the relationship between predicted and true values
     from the 45 degree angle.

@@ -11,7 +11,7 @@ class EPICReader:
         self.test_dir = Path(test_dir)
         self.test_annotations = benedict(keypath_separator=">")
         self.test_paths = benedict(keypath_separator=">")
-        self.ids_map_path = self.root_dir_path / "data" / "old_new_ids_map.json"
+        self.ids_map_path = self.root_dir_path / "data" / "original_to_changed_ids_map.json"
         self.fold_search_re = re.compile(r"fold\_\d")
         self.scenario_search_re = re.compile(r"scenario\_\d")
         self.relative_path_re = re.compile(r"scenario_.+\.csv")

@@ -73,10 +73,7 @@ parser.add_argument(
     "--finite", type=ast.literal_eval, default=True
 )
 parser.add_argument(
-    "--baseline", type=ast.literal_eval, default=False
-)
-parser.add_argument(
-    "--name", type=str, default=""
+    "--name", type=str, default="", required=True
 )
 
 args = vars(parser.parse_args())
@@ -84,25 +81,14 @@ root = Path(__file__).parent.parent
 test_path = root / Path("data/competition/test_annot/") # test data
 predictions_dir = root / "predictions"
 scores_dir = root / "scores"
+submissions_path = predictions_dir / args["name"]
 
-if args["baseline"]:
-    submissions_path = predictions_dir / "competition_baselines" # baseline submissions
-    if args["finite"]:
-        new_scoring_dir = scores_dir / "competition_baselines-finite" # scores for baselines with forced finite ccc values
-    else:
-        new_scoring_dir = scores_dir / "competition_baselines" # scores for baselines
-elif args["name"] != "":
-    submissions_path = predictions_dir / args["name"]
-    if args["finite"]:
-        new_scoring_dir = scores_dir / (args["name"] + "-finite") # scores with forced finite ccc values
-    else:
-        new_scoring_dir = scores_dir / args["name"] # just scores
+assert submissions_path in list(predictions_dir.iterdir()), f"""'{args["name"]}' not found in {predictions_dir}"""
+
+if args["finite"]:
+    new_scoring_dir = scores_dir / (args["name"] + "-finite") # scores with forced finite ccc values
 else:
-    submissions_path = predictions_dir / "competition_submissions" # normal submissions
-    if args["finite"]:
-        new_scoring_dir = scores_dir / "competition_submissions-finite" # scores for normal submissions with forced finite ccc values
-    else:
-        new_scoring_dir = scores_dir / "competition_submissions" # scores for normal submissions
+    new_scoring_dir = scores_dir / args["name"] # just scores
 
 epic_reader = EPICReader(test_path)
 
@@ -143,10 +129,6 @@ for scenario_path in test_path.iterdir():
 for team_dir in tqdm(submissions_path.iterdir()):
     if team_dir.name == "tmp":
         continue
-    
-    # if "baseline" in str(team_dir):
-    #     team_results_dir = team_dir
-    # else:
     if team_dir.name == "results":
         team_name = "."
         team_results_dir = team_dir

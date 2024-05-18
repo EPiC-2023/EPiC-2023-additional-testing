@@ -2,7 +2,7 @@
 
 [data.download_settings]
 download_dir = "data"
-skip_download = ["competition.competition_data", "competition.test_annot", "post_competition.original_train_noise_test", "post_competition.noise_data"] # put unwanted downloads here
+skip_download = ["competition.competition_data", "competition.test_annot", "additional_testing.original_train_noise_test", "additional_testing.noise_data"] # put unwanted downloads here
 
 [data.competition.competition_data]
 url = "https://drive.google.com/drive/folders/1cZNgZ1Hq_19TbyH1EWbS2pRZElNIG3NG"
@@ -10,10 +10,10 @@ url = "https://drive.google.com/drive/folders/1cZNgZ1Hq_19TbyH1EWbS2pRZElNIG3NG"
 [data.competition.test_annot]
 url = "https://drive.google.com/file/d/1dfb5wDx-AUzIJHRiyv7PxqDVkCONME4b"
 
-[data.post_competition.original_train_noise_test]
+[data.additional_testing.original_train_noise_test]
 url = "https://drive.google.com/drive/folders/1GAnGZZU5VCMmKxurdvk1RcarUVVz9AJh"
 
-[data.post_competition.noise_data]
+[data.additional_testing.noise_data]
 url = "https://drive.google.com/drive/folders/1Y5R0u67EnoRBCdFWtnt9a-V5CBzpg0VQ"
 
 
