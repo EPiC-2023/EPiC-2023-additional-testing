@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 
 """
-This code was used to generate data for additional experiments.
+This code was used to generate data for simulated random physiology experiments.
 """
 
 root_path = Path(__file__).parent.parent
@@ -16,7 +16,6 @@ extract_noise_test = True
 seed = 42
 rng = np.random.default_rng(seed=seed)
 competition_data_path = root_path / Path("data/competition/competition_data")
-competition_test_annotations_path = root_path / Path("data/competition/test_annot")
 noise_data_path = root_path / Path("data/additional_testing/noise_data")
 noise_test_path = root_path / Path("data/additional_testing/noise_test")
 
@@ -45,9 +44,7 @@ if __name__ == "__main__":
             else:
                 test_data.to_csv(noise_data_target_path, index=False)
         else:
-            # make target paths
-            annotation_path = (competition_data_path if "train" in str(original_data_path) else competition_test_annotations_path) / relative_path
-            copy(annotation_path, noise_data_target_path)
+            copy(original_data_path, noise_data_target_path)
     # Assert newly generated physiology
     print("Examining simulated random physiology data")
     for file_path in tqdm(noise_data_path.glob("**/physiology/*.csv")):
@@ -60,8 +57,6 @@ if __name__ == "__main__":
         # make target paths
         relative_path = original_data_path.relative_to(competition_data_path)
         noise_target_path = noise_data_path / relative_path
-        if "train" not in str(original_data_path):
-            original_data_path = competition_test_annotations_path / relative_path
         original_annot = pd.read_csv(original_data_path)
         noise_annot = pd.read_csv(noise_target_path)
         assert(all(noise_annot == original_annot)), "Simulated random physiology annotations do not match original ones"

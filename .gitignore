@@ -13,5 +13,9 @@ predictions/**/*.zip
 scores/**/*.json
 scores/**/*.zip
 
+# 
+tmp/**/*.csv
+tmp/**/*.zip
+
 # other .csv files
 **/*.csv

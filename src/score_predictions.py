@@ -78,7 +78,7 @@ parser.add_argument(
 
 args = vars(parser.parse_args())
 root = Path(__file__).parent.parent
-test_path = root / Path("data/competition/test_annot/") # test data
+test_path = root / Path("data/competition/test_annotations/") # test data
 predictions_dir = root / "predictions"
 scores_dir = root / "scores"
 submissions_path = predictions_dir / args["name"]
