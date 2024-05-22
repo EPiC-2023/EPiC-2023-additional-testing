@@ -18,4 +18,4 @@ tmp/**/*.csv
 tmp/**/*.zip
 
 # other .csv files
-**/*.csv
+# **/*.csv

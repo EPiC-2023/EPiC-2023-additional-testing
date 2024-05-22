@@ -3,7 +3,13 @@
 {"name": "scenario_3.zip", "type": "competition_data_with_test", "get_url": "https://github.com/Emognition/EPiC-2023-competition/releases/download/data-no-password/scenario_3_with_test.zip", "extract_dir": "data/competition/competition_data"}
 {"name": "scenario_4.zip", "type": "competition_data_with_test", "get_url": "https://github.com/Emognition/EPiC-2023-competition/releases/download/data-no-password/scenario_4_with_test.zip", "extract_dir": "data/competition/competition_data"}
 {"name": "test_annotations.zip", "type": "test_annotations", "get_url": "https://github.com/Emognition/EPiC-2023-competition/releases/download/data-no-password/test_annotations_only_all_scenarios.zip", "extract_dir": "data/competition/test_annotations"}
-{"name": "scenario_1.zip", "type": "noise_test", "get_url": "", "extract_dir": "data/additional_testing/noise_test"}
-{"name": "scenario_2.zip", "type": "noise_test", "get_url": "", "extract_dir": "data/additional_testing/noise_test"}
-{"name": "scenario_3.zip", "type": "noise_test", "get_url": "", "extract_dir": "data/additional_testing/noise_test"}
-{"name": "scenario_4.zip", "type": "noise_test", "get_url": "", "extract_dir": "data/additional_testing/noise_test"}
+{"name": "scenario_1.zip", "type": "noise_test", "get_url": "https://github.com/Emognition/EPiC-2023-additional-testing/releases/download/data-noise/noise_test_scenario_1.zip", "extract_dir": "data/additional_testing/noise_test"}
+{"name": "scenario_2.zip", "type": "noise_test", "get_url": "https://github.com/Emognition/EPiC-2023-additional-testing/releases/download/data-noise/noise_test_scenario_2.zip", "extract_dir": "data/additional_testing/noise_test"}
+{"name": "scenario_3.zip", "type": "noise_test", "get_url": "https://github.com/Emognition/EPiC-2023-additional-testing/releases/download/data-noise/noise_test_scenario_3.zip", "extract_dir": "data/additional_testing/noise_test"}
+{"name": "scenario_4.zip", "type": "noise_test", "get_url": "https://github.com/Emognition/EPiC-2023-additional-testing/releases/download/data-noise/noise_test_scenario_4.zip", "extract_dir": "data/additional_testing/noise_test"}
+{"name": "competition_submissions.zip", "type": "submissions", "get_url": "https://github.com/Emognition/EPiC-2023-scoring/releases/download/submissions/competition_submissions.zip", "extract_dir": "predictions/competition_submissions"}
+{"name": "teams_noise_submissions.zip", "type": "noise_submissions", "get_url": "https://github.com/Emognition/EPiC-2023-additional-testing/releases/download/noise-submissions/noise_submissions.zip", "extract_dir": "predictions/noise_submissions"}
+{"name": "average_baseline.zip", "type": "baseline", "get_url": "https://github.com/Emognition/EPiC-2023-additional-testing/releases/download/average-baseline/average_baseline.zip", "extract_dir": "predictions/competition_baselines"}
+{"name": "scores_competition.zip", "type": "scores", "get_url": "https://github.com/Emognition/EPiC-2023-additional-testing/releases/download/scores/competition_submissions-scores-finite.zip", "extract_dir": "scores/competition_submissions-finite"}
+{"name": "scores_baseline.zip", "type": "scores", "get_url": "https://github.com/Emognition/EPiC-2023-additional-testing/releases/download/scores/average-baseline-scores-finite.zip", "extract_dir": "scores/competition_baselines-finite"}
+{"name": "scores_noise.zip", "type": "scores", "get_url": "https://github.com/Emognition/EPiC-2023-additional-testing/releases/download/scores/noise_submissions-scores-finite.zip", "extract_dir": "scores/noise_submissions-finite"}
