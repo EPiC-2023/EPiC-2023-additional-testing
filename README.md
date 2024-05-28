@@ -44,7 +44,8 @@ To run notebooks (.ipynb files) you can open them in an IDE that can open notebo
 2. Opening resulting URL in your internet browser (should look similar to `http://localhost:8888/tree?token=...`)
 3. Opening the file you are interested in and running it
 
-The files that may be interested in:
+The files you may be interested in:
+- `src/examine_scores.ipynb` - code used to display average RMSE for scored predictions
 - `src/generate_additional_testing_exp.py` - code used to generate data for random simulated physiology experiments
 - `src/score_predictions.py` - code used to score predictions (RMSE calculation works the same as in [scoring repo](https://github.com/Emognition/EPiC-2023-scoring), but without boilerplate code unnecessary at this stage)
 - `src/make_baselines.ipynb` - code used to make baselines (finally only fold-wise baseline was used)
